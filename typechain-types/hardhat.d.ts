@@ -74,6 +74,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.FeeManager__factory>;
     getContractFactory(
+      name: "FiboToken",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.FiboToken__factory>;
+    getContractFactory(
       name: "IFeeManager",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IFeeManager__factory>;
@@ -89,6 +93,10 @@ declare module "hardhat/types/runtime" {
       name: "TokenPool",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.TokenPool__factory>;
+    getContractFactory(
+      name: "USDC",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.USDC__factory>;
 
     getContractAt(
       name: "ILayerZeroEndpoint",
@@ -166,6 +174,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.FeeManager>;
     getContractAt(
+      name: "FiboToken",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.FiboToken>;
+    getContractAt(
       name: "IFeeManager",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
@@ -185,6 +198,11 @@ declare module "hardhat/types/runtime" {
       address: string | ethers.Addressable,
       signer?: ethers.Signer
     ): Promise<Contracts.TokenPool>;
+    getContractAt(
+      name: "USDC",
+      address: string | ethers.Addressable,
+      signer?: ethers.Signer
+    ): Promise<Contracts.USDC>;
 
     deployContract(
       name: "ILayerZeroEndpoint",
@@ -247,6 +265,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.FeeManager>;
     deployContract(
+      name: "FiboToken",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.FiboToken>;
+    deployContract(
       name: "IFeeManager",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.IFeeManager>;
@@ -262,6 +284,10 @@ declare module "hardhat/types/runtime" {
       name: "TokenPool",
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.TokenPool>;
+    deployContract(
+      name: "USDC",
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.USDC>;
 
     deployContract(
       name: "ILayerZeroEndpoint",
@@ -339,6 +365,11 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.FeeManager>;
     deployContract(
+      name: "FiboToken",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.FiboToken>;
+    deployContract(
       name: "IFeeManager",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
@@ -358,6 +389,11 @@ declare module "hardhat/types/runtime" {
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.TokenPool>;
+    deployContract(
+      name: "USDC",
+      args: any[],
+      signerOrOptions?: ethers.Signer | DeployContractOptions
+    ): Promise<Contracts.USDC>;
 
     // default types
     getContractFactory(

@@ -1,5 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "hardhat-deploy";
+
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -15,6 +17,11 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       chainId: 31337,
+    },
+  },
+  namedAccounts: {
+    deployer: {
+      default: 0,
     },
   },
 };

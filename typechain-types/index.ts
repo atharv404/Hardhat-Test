@@ -38,6 +38,8 @@ export type { IERC165 } from "./@openzeppelin/contracts/utils/introspection/IERC
 export { IERC165__factory } from "./factories/@openzeppelin/contracts/utils/introspection/IERC165__factory";
 export type { FeeManager } from "./contracts/FeeManager";
 export { FeeManager__factory } from "./factories/contracts/FeeManager__factory";
+export type { FiboToken } from "./contracts/FiboToken";
+export { FiboToken__factory } from "./factories/contracts/FiboToken__factory";
 export type { IFeeManager } from "./contracts/interfaces/IFeeManager";
 export { IFeeManager__factory } from "./factories/contracts/interfaces/IFeeManager__factory";
 export type { ITokenPool } from "./contracts/interfaces/ITokenPool";
@@ -46,3 +48,5 @@ export type { TestToken } from "./contracts/TestToken";
 export { TestToken__factory } from "./factories/contracts/TestToken__factory";
 export type { TokenPool } from "./contracts/TokenPool";
 export { TokenPool__factory } from "./factories/contracts/TokenPool__factory";
+export type { USDC } from "./contracts/USDC";
+export { USDC__factory } from "./factories/contracts/USDC__factory";

@@ -3,5 +3,7 @@
 /* eslint-disable */
 export * as interfaces from "./interfaces";
 export { FeeManager__factory } from "./FeeManager__factory";
+export { FiboToken__factory } from "./FiboToken__factory";
 export { TestToken__factory } from "./TestToken__factory";
 export { TokenPool__factory } from "./TokenPool__factory";
+export { USDC__factory } from "./USDC__factory";

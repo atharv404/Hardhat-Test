@@ -4,5 +4,7 @@
 import type * as interfaces from "./interfaces";
 export type { interfaces };
 export type { FeeManager } from "./FeeManager";
+export type { FiboToken } from "./FiboToken";
 export type { TestToken } from "./TestToken";
 export type { TokenPool } from "./TokenPool";
+export type { USDC } from "./USDC";
